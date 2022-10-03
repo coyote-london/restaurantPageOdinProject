@@ -1,0 +1,49 @@
+#restaurantName, 
+#restaurantSlogan {
+    color: wheat;
+    margin: 2vw;
+}
+
+
+body {
+    background-image: url('images/BreadFrameMitiUnsplash.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: wheat;
+}
+
+#headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+
+    background-color: rgba(71, 68, 63, 0.7);
+
+    border-top: solid 1vw wheat;
+    border-bottom: solid 1vw wheat;
+}
+
+#aboutSection {
+    background-color: rgba(71, 68, 63, 0.7);
+    border: solid 2vw wheat;
+    border-radius: 7px;
+    max-width: 45vw;
+    padding: 2vw;
+    font-weight: 900;
+}
+
+.navButton {
+    margin: 2vw;
+    background-color: wheat;
+    color:rgb(71, 68, 63);
+    border-radius: 5px;
+    border: solid .5vw rgb(71, 68, 63)
+}
