@@ -1,5 +1,6 @@
 #restaurantName, 
-#restaurantSlogan {
+#restaurantSlogan,
+.restaurantContact {
     color: wheat;
     margin: 2vw;
 }
@@ -34,13 +35,16 @@ p {
     border-bottom: solid 1vw wheat;
 }
 
-#aboutSection {
+#aboutSection,
+#menuSection,
+#contactSection {
     background-color: rgba(71, 68, 63, 0.7);
     border: solid 2vw wheat;
     border-radius: 7px;
     max-width: 45vw;
     padding: 2vw;
     font-weight: 900;
+    margin: 2vw;
 }
 
 .navButton {

@@ -1,6 +1,9 @@
+import { renderContactPage } from './contactPage.js';
+import { renderMenuPage } from './menuPage.js';
 
-function test() {
+function renderAboutPage() {
     let content = document.getElementById('content');
+    content.innerHTML = '';
     let aboutPage = document.createElement('div');
     
     const headerContainer = document.createElement('div')
@@ -24,25 +27,40 @@ function test() {
     const homeButton = document.createElement('button');
     homeButton.className = 'navButton';
     homeButton.innerHTML = 'Home';
+    homeButton.onclick = e => {
+        e.stopPropagation;
+        content.innerHTML = '';
+        renderAboutPage();
+    }
     navButtonContainer.appendChild(homeButton);
 
     const menuButton = document.createElement('button');
     menuButton.className = 'navButton';
     menuButton.innerHTML = 'Menu';
+    menuButton.onclick = e => {
+        e.stopPropagation;
+        content.innerHTML = '';
+        renderMenuPage();
+    }    
     navButtonContainer.appendChild(menuButton);
 
     const contactButton = document.createElement('button');
     contactButton.className = 'navButton';
     contactButton.innerHTML = 'Contact Us';
+    contactButton.onclick = e => {
+        e.stopPropagation;
+        content.innerHTML = '';
+        renderContactPage();
+    }
     navButtonContainer.appendChild(contactButton);
     
     const aboutSection = document.createElement('p');
     aboutSection.id = 'aboutSection';
     aboutSection.innerHTML = 'For 20 weeks this small family owned business has been selling' +
-        'buns, rolls, and those large loafs we know and love. Our owner, a member of the small family of one,' +
-        'had a supermarket in the suburb he grew up in and he has 20 years experience watching the bakers' +
-        'inside the bakery section bake their bread! This is where our bread comes from to this day!' +
-        'Come on in!';
+        ' buns, rolls, and those large loafs we know and love. Our owner, a member of the small family of one,' +
+        ' had a supermarket in the suburb he grew up in and he has 20 years experience watching the bakers' +
+        ' inside the bakery section bake their bread! This is where our bread comes from to this day!' +
+        ' Come on in!';
     aboutPage.appendChild(aboutSection);
 
 
@@ -55,4 +73,4 @@ function test() {
 
 
 
-export { test }
+export { renderAboutPage }
