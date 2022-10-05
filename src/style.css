@@ -1,14 +1,28 @@
 #restaurantName, 
 #restaurantSlogan,
-.restaurantContact {
+.restaurantContact,
+.menuItem {
     color: wheat;
     margin: 2vw;
 }
 
 
+.menuItemContainer {
+    display: flex;
+    padding: 2vw;
+}
+
+.menuItemImg {
+    max-height: 18vh;
+    max-width: 26vw;
+    border-radius: 2vw;
+    border: 1vw solid wheat;
+}
+
 body {
     background-image: url('images/BreadFrameMitiUnsplash.jpg');
-    background-size: cover; 
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tabContent {
